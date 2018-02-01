@@ -1,0 +1,48 @@
+server:
+  port: 7070
+
+debug: true
+logging:
+    pattern:
+      level: info
+
+
+spring:
+  application:
+    name: taxis-client
+  profiles:
+    include: service
+
+endpoints:
+  health:
+    sensitive: false
+
+feign:
+  hystrix:
+    enabled: true
+
+# turbine:
+  # appConfig: taxis-driver-server,taxis-passenger-server  # 配置Eureka中的serviceId列表，表明监控哪些服务
+  # clusterNameExpression: new String("default")
+
+hystrix:
+  command:
+    default.execution.isolation.thread.timeoutInMilliseconds: 5000
+
+eureka:
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.application.name}:${server.port}
+    appname: taxis-eureka-client
+  client:
+    serviceUrl:
+      defaultZone: http://admin:password@peer1:8000/eureka/
+    healthcheck:
+      enabled: true
+
+
+
+
+
+
+

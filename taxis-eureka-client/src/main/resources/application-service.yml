@@ -1,0 +1,8 @@
+taxis:
+  rest:
+    strategy: feign
+
+
+
+
+

@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: taxis-eureka-server
+
+security:
+    basic:
+      enabled: true
+    user:
+      name: admin
+      password: password

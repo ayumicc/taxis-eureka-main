@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: taxis-passenger-server
+  profiles:
+    active: test

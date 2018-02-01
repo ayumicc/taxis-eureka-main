@@ -1,0 +1,27 @@
+server:
+  port: 7072
+
+debug: true
+logging:
+    pattern:
+      level: INFO
+
+feign:
+  hystrix:
+    enabled: true
+
+endpoints:
+  health:
+    sensitive: false
+
+eureka:
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.application.name}:${server.port}
+    appname: taxis-eureka-driver-server
+  client:
+    serviceUrl:
+      defaultZone: http://admin:password@peer1:8000/eureka/
+
+
+
