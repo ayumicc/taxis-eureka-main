@@ -1,6 +1,6 @@
 taxis:
   rest:
-    strategy: feign
+    strategy: feignClientToServer
 
 
 
