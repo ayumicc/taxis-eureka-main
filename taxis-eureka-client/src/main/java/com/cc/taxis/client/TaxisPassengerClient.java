@@ -14,6 +14,6 @@ public interface TaxisPassengerClient {
 
 
     @RequestMapping(value = "/service/depart/findPage", method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_VALUE)
-    ReportResponseBody findDepartByPage(@RequestParam("pageNum") int pageNum ,@RequestParam("pageSize") int pageSize);
+    ReportResponseBody findDepartByPage(@RequestParam("pageNum") Integer pageNum ,@RequestParam("pageSize") Integer pageSize);
 
 }

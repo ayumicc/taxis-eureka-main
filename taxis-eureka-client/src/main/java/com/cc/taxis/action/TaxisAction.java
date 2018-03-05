@@ -46,8 +46,8 @@ public class TaxisAction {
      * @param reportRequestBody
      * @return
      */
-    public ReportResponseBody serviceError(String serviceName, ReportRequestBody reportRequestBody) {
-        return ReportResponseBody.failedResult(-1, "【" + serviceName + "】服务超时无法访问.");
+    public ReportResponseBody serviceError(String serviceName, ReportRequestBody reportRequestBody ,  Throwable e) {
+        return ReportResponseBody.failedResult(-1, "【" + serviceName + "】服务访问失败，" + e.getMessage());
     }
 
 }

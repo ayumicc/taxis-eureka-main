@@ -3,9 +3,11 @@ package com.cc.taxis.utils;
 import org.springframework.aop.framework.AdvisedSupport;
 import org.springframework.aop.framework.AopProxy;
 import org.springframework.aop.support.AopUtils;
+import org.springframework.stereotype.Component;
 
 import java.lang.reflect.Field;
 
+@Component
 public class AopTargetUtils {
 
     /**
