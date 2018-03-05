@@ -40,7 +40,7 @@ public class TaxisController {
     }
 
     @RequestMapping(value = "/depart/findPage",method = RequestMethod.POST)
-    public PageInfo<Depart> findDepartByPage(int pageNum , int pageSize){
+    public PageInfo<Depart> findDepartByPage(Integer pageNum , Integer pageSize){
         return departService.findDepartByPage(pageNum,pageSize);
     }
 
