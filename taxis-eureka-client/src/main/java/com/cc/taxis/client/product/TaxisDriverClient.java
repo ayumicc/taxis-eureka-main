@@ -1,8 +1,9 @@
-package com.cc.taxis.client;
+package com.cc.taxis.client.product;
 
 import com.cc.taxis.dto.ReportRequestBody;
 import org.springframework.cloud.netflix.feign.FeignClient;
 import org.springframework.http.MediaType;
+import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.*;
 
 @FeignClient(name="taxis-driver-server")

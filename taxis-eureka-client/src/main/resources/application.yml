@@ -27,7 +27,7 @@ feign:
 
 hystrix:
   command:
-    default.execution.isolation.thread.timeoutInMilliseconds: 5000
+    default.execution.isolation.thread.timeoutInMilliseconds: 15000
 
 eureka:
   instance:

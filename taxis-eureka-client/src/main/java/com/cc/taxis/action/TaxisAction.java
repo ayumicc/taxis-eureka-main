@@ -47,6 +47,7 @@ public class TaxisAction {
      * @return
      */
     public ReportResponseBody serviceError(String serviceName, ReportRequestBody reportRequestBody ,  Throwable e) {
+        e.printStackTrace();
         return ReportResponseBody.failedResult(-1, "【" + serviceName + "】服务访问失败，" + e.getMessage());
     }
 
