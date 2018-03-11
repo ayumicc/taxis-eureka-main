@@ -3,3 +3,4 @@ spring:
     name: taxis-driver-server
   profiles:
     active: test
+    include: test-mybatis
