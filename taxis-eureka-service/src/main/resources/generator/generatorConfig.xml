@@ -16,9 +16,9 @@
         </plugin>
 
         <jdbcConnection driverClass="com.mysql.jdbc.Driver"
-                        connectionURL="jdbc:mysql://localhost:3306/test"
+                        connectionURL="jdbc:mysql://39.107.100.49:3306/taxis"
                         userId="root"
-                        password="123456">
+                        password="taxis-123">
         </jdbcConnection>
 
         <javaModelGenerator targetPackage="com.cc.taxis.model" targetProject="src/main/java"/>
