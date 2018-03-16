@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.cc.taxis.mapper.PurseDetailsMapper" >
+  <resultMap id="BaseResultMap" type="com.cc.taxis.model.PurseDetails" >
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="purse_details_id" property="purseDetailsId" jdbcType="VARCHAR" />
+    <result column="purse_id" property="purseId" jdbcType="VARCHAR" />
+    <result column="details_classify" property="detailsClassify" jdbcType="TINYINT" />
+    <result column="details_content" property="detailsContent" jdbcType="VARCHAR" />
+    <result column="money" property="money" jdbcType="DECIMAL" />
+    <result column="order_no" property="orderNo" jdbcType="VARCHAR" />
+    <result column="modify_time" property="modifyTime" jdbcType="TIMESTAMP" />
+    <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+    <result column="modifier" property="modifier" jdbcType="VARCHAR" />
+    <result column="creater" property="creater" jdbcType="VARCHAR" />
+  </resultMap>
+</mapper>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.cc.taxis.mapper.TaxiMapper" >
+  <resultMap id="BaseResultMap" type="com.cc.taxis.model.Taxi" >
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="taxi_id" property="taxiId" jdbcType="VARCHAR" />
+    <result column="car_id" property="carId" jdbcType="VARCHAR" />
+    <result column="register_user_id" property="registerUserId" jdbcType="VARCHAR" />
+    <result column="plate_no" property="plateNo" jdbcType="VARCHAR" />
+    <result column="car_brand" property="carBrand" jdbcType="VARCHAR" />
+    <result column="car_colour" property="carColour" jdbcType="VARCHAR" />
+    <result column="car_owner_name" property="carOwnerName" jdbcType="VARCHAR" />
+    <result column="company" property="company" jdbcType="VARCHAR" />
+    <result column="phone" property="phone" jdbcType="VARCHAR" />
+    <result column="head_portrait" property="headPortrait" jdbcType="VARCHAR" />
+    <result column="longitude" property="longitude" jdbcType="VARCHAR" />
+    <result column="latitude" property="latitude" jdbcType="VARCHAR" />
+    <result column="taxi_classify" property="taxiClassify" jdbcType="TINYINT" />
+    <result column="is_onine" property="isOnine" jdbcType="TINYINT" />
+    <result column="is_empty" property="isEmpty" jdbcType="TINYINT" />
+    <result column="is_order" property="isOrder" jdbcType="TINYINT" />
+    <result column="modify_time" property="modifyTime" jdbcType="TIMESTAMP" />
+    <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+    <result column="modifier" property="modifier" jdbcType="VARCHAR" />
+    <result column="creater" property="creater" jdbcType="VARCHAR" />
+  </resultMap>
+</mapper>

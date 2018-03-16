@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.cc.taxis.mapper.PublicCarSchedulingMapper" >
+  <resultMap id="BaseResultMap" type="com.cc.taxis.model.PublicCarScheduling" >
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="scheduling_id" property="schedulingId" jdbcType="VARCHAR" />
+    <result column="public_car_id" property="publicCarId" jdbcType="VARCHAR" />
+    <result column="lu_id" property="luId" jdbcType="VARCHAR" />
+    <result column="region" property="region" jdbcType="VARCHAR" />
+    <result column="region_code" property="regionCode" jdbcType="VARCHAR" />
+    <result column="start_address" property="startAddress" jdbcType="VARCHAR" />
+    <result column="end_address" property="endAddress" jdbcType="VARCHAR" />
+    <result column="start_longitude" property="startLongitude" jdbcType="VARCHAR" />
+    <result column="start_latitude" property="startLatitude" jdbcType="VARCHAR" />
+    <result column="end_longitude" property="endLongitude" jdbcType="VARCHAR" />
+    <result column="end_latitude" property="endLatitude" jdbcType="VARCHAR" />
+    <result column="begin_time" property="beginTime" jdbcType="TIMESTAMP" />
+    <result column="end_time" property="endTime" jdbcType="TIMESTAMP" />
+    <result column="drive_minute" property="driveMinute" jdbcType="TINYINT" />
+    <result column="price" property="price" jdbcType="DECIMAL" />
+    <result column="status" property="status" jdbcType="TINYINT" />
+    <result column="modify_time" property="modifyTime" jdbcType="TIMESTAMP" />
+    <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+    <result column="modifier" property="modifier" jdbcType="VARCHAR" />
+    <result column="creater" property="creater" jdbcType="VARCHAR" />
+  </resultMap>
+</mapper>
