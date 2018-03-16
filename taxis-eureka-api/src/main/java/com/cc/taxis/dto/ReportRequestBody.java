@@ -34,8 +34,9 @@ public class ReportRequestBody implements Serializable {
     }
 
     public void setService(String service) {
-        if (service != null)
-            service = service.replaceAll("\\.","/");
+        if (service != null) {
+            service = service.replaceAll("\\.", "/");
+        }
         this.service = service;
     }
 

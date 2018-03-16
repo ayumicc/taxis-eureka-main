@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.cc.taxis.mapper.AuthorizeDataMapper" >
+  <resultMap id="BaseResultMap" type="com.cc.taxis.model.AuthorizeData" >
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="authorize_id" property="authorizeId" jdbcType="VARCHAR" />
+    <result column="car_id" property="carId" jdbcType="VARCHAR" />
+    <result column="real_name" property="realName" jdbcType="VARCHAR" />
+    <result column="card_id" property="cardId" jdbcType="VARCHAR" />
+    <result column="license_no" property="licenseNo" jdbcType="VARCHAR" />
+    <result column="first_license_time" property="firstLicenseTime" jdbcType="TIMESTAMP" />
+    <result column="begin_license_time" property="beginLicenseTime" jdbcType="TIMESTAMP" />
+    <result column="end_license_time" property="endLicenseTime" jdbcType="TIMESTAMP" />
+    <result column="valid_month" property="validMonth" jdbcType="INTEGER" />
+    <result column="motor_no" property="motorNo" jdbcType="VARCHAR" />
+    <result column="register_data" property="registerData" jdbcType="DATE" />
+    <result column="modify_time" property="modifyTime" jdbcType="TIMESTAMP" />
+    <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+    <result column="modifier" property="modifier" jdbcType="VARCHAR" />
+    <result column="creater" property="creater" jdbcType="VARCHAR" />
+  </resultMap>
+</mapper>
